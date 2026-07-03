@@ -19,6 +19,8 @@ module tb_bk4b;
     );
 
     initial begin
+	$dumpfile("bk4b.vcd");
+    	$dumpvars(0, tb_bk4b);
         $display("Starting exhaustive test...");
 
         for (k = 0; k < 2; k = k + 1) begin
